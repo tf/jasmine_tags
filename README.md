@@ -10,20 +10,20 @@ to add tag annotations to specs and run subsets of all specs.
 Annotate `describe` and `it` blocks with tags:
 
 ```javsscript
-tag('slow')
+tag('slow');
 describe('some heavy lifiting your might want to skip some times', function() {
   tag('important')
   it('is very important', function() {
     ...
-  })
+  });
 });
 ```
 
 Use multiple tags:
 
 ```javsscript
-tags('focus', 'acceptance')
-describe('some heavy lifiting you might want to skip sometimes', function() {
+tags('focus', 'acceptance');
+describe('some acceptance specs you are currently working on', function() {
   ...
 });
 ```
@@ -41,5 +41,10 @@ spec runner.
 
 ### Installation
 
-Just include [`src/jasmine_tags.js`](blob/src/jasmine_tags.js) from
-your jasmine spec runner.
+Just link `src/jasmine_tags.js` from your jasmine spec runner.
+
+### License
+
+Please fork and improve.
+
+Copyright (c) 2011 Tim Fischbach. This software is licensed under the MIT License.
