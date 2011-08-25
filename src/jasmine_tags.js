@@ -125,5 +125,5 @@ var jasmineTags = (function() {
   };
 }());
 
-// Define and override method on window.
+// Define and override methods on window.
 jasmineTags.setup(window, jasmineTags.parseTagParam(location.search));

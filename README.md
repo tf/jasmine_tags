@@ -1,31 +1,34 @@
 # Jasmine Tags
 
-* [github.com/tf/jasmine_tags]
+* [github.com/tf/jasmine_tags](http://github.com/tf/jasmine_tags)
 
 A simple hack on top of [Jasmine](https://github.com/pivotal/jasmine)
 to add tag annotations to specs and run subsets of all specs.
 
 ### Usage
 
-Annotate `describe` blocks with tags:
+Annotate `describe` and `it` blocks with tags:
 
 ```javsscript
 tag('slow')
 describe('some heavy lifiting your might want to skip some times', function() {
-
+  tag('important')
+  it('is very important', function() {
+    ...
+  })
 });
 ```
 
 Use multiple tags:
 
 ```javsscript
-tag('focus', 'acceptance')
-describe('some heavy lifiting your might want to skip some times', function() {
-
+tags('focus', 'acceptance')
+describe('some heavy lifiting you might want to skip sometimes', function() {
+  ...
 });
 ```
 
-Appending a query string parameter to your test runner site filters specs by tags:
+Appending a query string parameter to your test runner filters specs by tags:
 
 ```
 ?tags=focus        # Run only specs with tag focus
