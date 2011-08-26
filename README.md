@@ -12,7 +12,7 @@ Annotate `describe` and `it` blocks with tags:
 ```javsscript
 tag('slow');
 describe('some heavy lifiting your might want to skip some times', function() {
-  tag('important')
+  tag('important');
   it('is very important', function() {
     ...
   });
