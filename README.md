@@ -1,6 +1,8 @@
 # Jasmine Tags
 
-* [github.com/tf/jasmine_tags](http://github.com/tf/jasmine_tags)
+**STATUS: Not maintained**
+
+---
 
 A simple hack on top of [Jasmine](https://github.com/pivotal/jasmine)
 to add tag annotations to specs and run subsets of all specs.
